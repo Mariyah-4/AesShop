@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f0eb">
+  <meta name="description" content="Soulstacy Studio — curated portraits, artful photography, and digital prints for souls who see beauty differently.">
+  <title>SOULSTACY STUDIO — Art That Feels Like a Memory</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="products.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="announcement">A little art for the spaces that feel like you <span>✳</span> Digital downloads, made for your walls & screens</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Soulstacy Studio home">SOULSTACY <span>STUDIO</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#shop">Shop</a><a href="#collections">Collections</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="searchToggle" aria-label="Search artwork">⌕</button>
+      <button class="icon-button" id="wishlistToggle" aria-label="View favourites">♡ <span id="wishCount">0</span></button>
+      <button class="cart-button" id="cartToggle">Bag <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> ART FOR THE FEELING-LED</p>
+        <h1>Art That Feels<br>Like a <em>Memory.</em></h1>
+        <p class="hero-subtitle">Curated portraits and photographs for souls who see beauty differently.</p>
+        <div class="hero-buttons"><a class="button button-dark" href="#shop">Explore Collection <span>↗</span></a><a class="text-link" href="#bestsellers">Shop bestsellers <span>→</span></a></div>
+        <div class="hero-note"><span class="tiny-star">✳</span><span>Thoughtfully collected.<br>Forever yours.</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-image-main"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1100&q=85" alt="Soft, editorial portrait in warm natural light" fetchpriority="high"></div>
+        <div class="hero-image-small"><img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=500&q=80" alt="Dreamy mountain landscape beneath a starry sky"></div>
+        <div class="art-stamp">A collection<br>of little feelings <span>✳</span></div>
+        <p class="image-caption">FIG. 01 — THE ART OF FEELING</p>
+      </div>
+      <div class="hero-bottom"><span>INDEPENDENT ART STORE</span><span>MADE FOR YOUR LITTLE CORNER OF THE WORLD</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <section class="intro-strip">
+      <p>Not just something to look at.</p><span>Something to <em>feel.</em></span><span class="strip-symbol">✳</span>
+    </section>
+
+    <section class="section collection-section" id="collections">
+      <div class="section-heading"><div><p class="eyebrow">CURATED WORLDS</p><h2>Find your <em>kind</em> of beautiful.</h2></div><a class="text-link" href="#shop">View all collections ↗</a></div>
+      <div class="collection-grid">
+        <a class="collection-card collection-tall" href="#shop" data-category="Dreamy Portraits"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=850&q=85" alt="Dreamy portrait with soft, natural light" loading="lazy"><span class="collection-index">01 / PORTRAITS</span><div><h3>Dreamy Portraits</h3><span>Explore the mood ↗</span></div></a>
+        <a class="collection-card" href="#shop" data-category="Dark Academia"><img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=750&q=85" alt="Quiet old library lined with books" loading="lazy"><span class="collection-index">02 / OLD SOULS</span><div><h3>Dark Academia</h3><span>Explore the mood ↗</span></div></a>
+        <a class="collection-card" href="#shop" data-category="Nature & Landscapes"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=750&q=85" alt="Misty lake and mountains in muted tones" loading="lazy"><span class="collection-index">03 / ELSEWHERE</span><div><h3>Nature, Slowly</h3><span>Explore the mood ↗</span></div></a>
+      </div>
+    </section>
+
+    <section class="section bestsellers-section" id="bestsellers">
+      <div class="section-heading"><div><p class="eyebrow">THE LITTLE OBSESSIONS</p><h2>Most <em>loved.</em></h2></div><p class="heading-note">Art you saved, loved, and came back for.</p></div>
+      <div class="product-grid" id="bestsellerGrid"></div>
+    </section>
+
+    <section class="aesthetic-section">
+      <div class="aesthetic-copy"><p class="eyebrow">A MOOD, NOT A RULE</p><h2>Find your<br><em>aesthetic.</em></h2><p>For the daydreamers, the midnight thinkers, and everyone in between. Pick a feeling; we'll find the art.</p><a href="#shop" class="button button-light">Find your feeling <span>↗</span></a></div>
+      <div class="aesthetic-list">
+        <a href="#shop" data-category="Dark Academia"><span>01</span> Dark Academia <b>↗</b></a>
+        <a href="#shop" data-category="Vintage Romance"><span>02</span> Vintage Romance <b>↗</b></a>
+        <a href="#shop" data-category="Dreamy Portraits"><span>03</span> Dreamy Portraits <b>↗</b></a>
+        <a href="#shop" data-category="Moody Photography"><span>04</span> Moody Photography <b>↗</b></a>
+        <a href="#shop" data-category="Gothic Beauty"><span>05</span> Gothic Beauty <b>↗</b></a>
+        <a href="#shop" data-category="Minimalist Art"><span>06</span> Minimalist Art <b>↗</b></a>
+      </div>
+      <div class="aesthetic-orbit">✳<br><small>YOUR<br>WORLD</small></div>
+    </section>
+
+    <section class="section shop-section" id="shop">
+      <div class="section-heading shop-heading"><div><p class="eyebrow">THE FULL COLLECTION</p><h2>Find your <em>forever piece.</em></h2></div><span class="result-count" id="resultCount">12 pieces</span></div>
+      <div class="shop-tools">
+        <label class="search-field"><span>⌕</span><input id="searchInput" type="search" placeholder="Search art, moods, places..." aria-label="Search products"></label>
+        <label class="filter-label"><span>Collection</span><select id="categoryFilter" aria-label="Filter by category"><option value="All">All collections</option></select></label>
+        <label class="filter-label"><span>Sort by</span><select id="sortFilter" aria-label="Sort products"><option value="featured">Featured</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option><option value="newest">Newest</option><option value="popular">Most loved</option></select></label>
+      </div>
+      <div class="product-grid" id="shopGrid"></div>
+      <p class="no-results hidden" id="noResults">No pieces found in this little corner. Try another search.</p>
+    </section>
+
+    <section class="manifesto" id="about">
+      <div class="manifesto-image"><img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=1100&q=85" alt="Art prints and photographs arranged in a thoughtful gallery wall" loading="lazy"></div>
+      <div class="manifesto-copy"><p class="eyebrow">A NOTE FROM THE STUDIO</p><h2>For the things<br>you can't quite<br><em>put into words.</em></h2><p>SOULSTACY STUDIO is a small, feeling-first art space. A collection of portraits, photographs, and digital pieces chosen for the way they hold a moment — a little nostalgia, a little wonder, a little of you.</p><p>We believe the spaces we live in should feel like the people we are becoming. Start with one image that makes you feel something.</p><a href="#shop" class="text-link">Meet your next favourite ↗</a></div>
+    </section>
+
+    <section class="newsletter-section">
+      <div class="newsletter-decoration">✳</div><p class="eyebrow">LETTERS FROM THE STUDIO</p><h2>A softer kind of <em>inbox.</em></h2><p>New collections, little inspirations, and occasional love notes. No noise, just good things.</p>
+      <form id="newsletterForm" class="newsletter-form"><label class="sr-only" for="newsletterEmail">Your email address</label><input type="email" id="newsletterEmail" placeholder="Your email address" required><button type="submit">Count me in ↗</button></form><p class="form-message" id="newsletterMessage" aria-live="polite"></p><small>By subscribing, you agree to receive studio updates. Unsubscribe whenever.</small>
+    </section>
+
+    <section class="contact-section section" id="contact"><div><p class="eyebrow">SAY HELLO</p><h2>Good art. Good <em>conversations.</em></h2><p>Questions about a print, a licence, or a piece that feels like it was made for you? We'd love to hear from you.</p><a class="text-link" href="mailto:hello@soulstacystudio.example">hello@soulstacystudio.example ↗</a></div>
+      <form id="contactForm" class="contact-form"><label>Your name<input name="name" required placeholder="What should we call you?"></label><label>Email address<input type="email" name="email" required placeholder="you@example.com"></label><label>Subject<input name="subject" required placeholder="What's on your mind?"></label><label>Your message<textarea name="message" rows="4" required placeholder="Tell us a little..."></textarea></label><button class="button button-dark" type="submit">Send a little note ↗</button><p id="contactMessage" class="form-message" aria-live="polite"></p></form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-top"><div><a class="brand footer-brand" href="#home">SOULSTACY <span>STUDIO</span></a><p>Art for the feeling-led.<br>Collected with love, kept forever.</p></div><div class="footer-links"><div><b>EXPLORE</b><a href="#shop">Shop all</a><a href="#collections">Collections</a><a href="#about">Our story</a></div><div><b>THE DETAILS</b><a href="#policies">Digital downloads</a><a href="#policies">Personal-use licence</a><a href="#contact">Contact & support</a></div><div><b>FOLLOW THE MOOD</b><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://www.pinterest.com/" target="_blank" rel="noreferrer">Pinterest ↗</a><a href="https://www.tiktok.com/" target="_blank" rel="noreferrer">TikTok ↗</a></div></div></div><div class="footer-bottom" id="policies"><span>© <span id="year"></span> SOULSTACY STUDIO</span><span>PERSONAL USE ONLY UNLESS OTHERWISE STATED</span><span>MADE FOR YOUR WALLS & YOUR WORLDS ✳</span></div></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="side-drawer" id="cartDrawer" aria-label="Shopping bag" aria-hidden="true"><div class="drawer-header"><div><p class="eyebrow">YOUR LITTLE COLLECTION</p><h2>Your bag <span id="drawerCount">(0)</span></h2></div><button class="close-drawer" data-close aria-label="Close bag">×</button></div><div id="cartItems" class="drawer-items"></div><div class="drawer-bottom"><div class="subtotal"><span>Subtotal</span><strong id="cartSubtotal">₹0</strong></div><p>Digital items are delivered after a real checkout is connected. This demo does not collect payments.</p><button id="checkoutButton" class="button button-dark full-button">Continue to checkout ↗</button><button class="continue-shopping" data-close>Keep looking around</button></div></aside>
+  <aside class="side-drawer" id="wishlistDrawer" aria-label="Favourites" aria-hidden="true"><div class="drawer-header"><div><p class="eyebrow">SAVED FOR LATER</p><h2>Your favourites <span id="wishlistDrawerCount">(0)</span></h2></div><button class="close-drawer" data-close aria-label="Close favourites">×</button></div><div id="wishlistItems" class="drawer-items"></div></aside>
+
+  <div class="modal-backdrop" id="productModal" aria-hidden="true"><div class="product-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Close product details">×</button><div id="modalContent"></div></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
